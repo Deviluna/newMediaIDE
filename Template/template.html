@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>%(title)s</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+	<script type="text/javascript" defer="defer" src="test.js"></script>
+
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<script type="text/javascript">function hideDiv(){
+
+var sUserAgent = navigator.userAgent.toLowerCase();
+var bIsApp = sUserAgent.match("appweb") == "appweb";
+if (bIsApp)
+{document.getElementById('pageHead').style.display = "none";
+}
+}
+</script>
+
+  </head>
+  <body onload="hideDiv()">
+   <div id="pageHead">
+    <section class="page-header"  >
+      <h1 class="project-name">%(title)s</h1>
+	  <h2 class="project-tagline">%(author)s</h2>
+</div>
+    </section>
+  <section class="main-content">
+%(content)s
+
+	 <footer class="site-footer" align="right">
+		        <span class="site-footer-credits">计算理论公众号</span><br>
+                        <span class="site-footer-credits">%(date)s</span><br>
+
+        <span class="site-footer-credits">由MediaIDE自动生成</span>
+      </footer>
+    </section>
+
+  
+  </body>
+</html>
